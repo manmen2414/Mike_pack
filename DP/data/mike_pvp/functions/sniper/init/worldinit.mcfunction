@@ -9,4 +9,3 @@ scoreboard objectives add snipermotz2 dummy
 scoreboard objectives add snipermormt dummy
 scoreboard players set @a snipercd 0
 tellraw @a [{"text": "[sniper] 各種スコアボードを生成しました。"},{"text": "( 実行者 : ","color": "light_gray"},{"selector":"@s","color": "light_gray"},{"text": " )","color": "light_gray"}]
-function mike_pvp:master/pn
