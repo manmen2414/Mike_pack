@@ -1,0 +1,4 @@
+clear @a
+give @a minecraft:pufferfish{CustomModelData: 38, display: {Name: '[{"text":"カルルス","italic":false,"color":"aqua"}]', Lore: ['[{"text":"大不評。","italic":false}]', '[{"text":"ここでも食べるとまずいかも。","italic":false}]', '[{"text":"","italic":false}]', '[{"text":"Tip:ふぐ","italic":false}]']}} 2304
+item replace entity @a weapon.offhand with minecraft:pufferfish{CustomModelData: 38, display: {Name: '[{"text":"カルルス","italic":false,"color":"aqua"}]', Lore: ['[{"text":"大不評。","italic":false}]', '[{"text":"ここでも食べるとまずいかも。","italic":false}]', '[{"text":"","italic":false}]', '[{"text":"Tip:ふぐ","italic":false}]']}} 64
+tellraw @a ["",{"text":"あなたはカルルスによりすべてをカルルスに変えられた。","color":"green"},{"text":"\n"},{"text":"食え。","bold":true},{"text":"\n\n"},{"text":"[食べきれる自信がない場合は押してね]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/clear @s minecraft:pufferfish"}}]

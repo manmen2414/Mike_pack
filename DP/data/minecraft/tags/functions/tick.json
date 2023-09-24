@@ -2,6 +2,7 @@
   "values": [
     "mike_pvp:sniper/loop",
     "mike_pvp:shield/tick",
-    "mike_pvp:master/init/chobotournament/tick"
+    "mike_pvp:master/init/chobotournament/tick",
+    "mike_pvp:master/init/carurustournament/tick"
   ]
 }

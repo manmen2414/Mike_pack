@@ -1,0 +1,1 @@
+give @s minecraft:dried_kelp{display: {Name: '[{"text":"ちょぼちょぼ","italic":false,"color":"yellow"}]', Lore: ['[{"text":"あの承久氏も愛するおいしいお菓子。","italic":false,"color":"white"}]', '[{"text":"なお現実ではいろんなメーカーが売ってる。","italic":false}]']}, CustomModelData: 38} 64

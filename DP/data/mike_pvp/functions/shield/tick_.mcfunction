@@ -4,9 +4,9 @@ scoreboard players set @s[nbt={SelectedItem: {tag: {CustomModelData: 21}}},nbt={
 scoreboard players set @s[nbt=!{SelectedItem: {tag: {CustomModelData: 21}}},nbt=!{Inventory: [{Slot: -106b, tag: {CustomModelData: 21}}]}] shield.shieldingcount 0
 # ↑ アイテムを持ってるか？　↓ 前の状態と違うか確認するstatuscheckを実行
 function mike_pvp:shield/statuscheck
-# ↑ 前の状態と違うか確認するstatuscheckを実行　↓ 耐久度をがんばるかっこいいdurabilityを実行
+# ↑ 前の状態と違うか確認するstatuscheckを実行　↓ durabilityを実行
 execute as @s[scores={shield.shieldingcount=1..2}] run function mike_pvp:shield/durability10_20
-# ↑ 耐久度をがんばるかっこいいdurabilityを実行　↓ ゴーレムを管理
+# ↑ durabilityを実行　↓ ゴーレムを管理
 execute as @e[tag=shield.defender,tag=shield.processing] run tp @s ^ ^ ^1.5 ~ ~
 effect give @e[tag=shield.defender,tag=shield.processing] invisibility 1 1 true
 #effect give @e[tag=shield.defender,tag=shield.processing] glowing 1 1 true
