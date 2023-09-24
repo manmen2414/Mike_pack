@@ -11,9 +11,9 @@ execute as @a[scores={right_click=..0, snipercd=1},nbt={SelectedItem:{tag:{hstyp
 # Cooldown & Brusting
 execute as @e[tag=brusted] at @s run execute unless block ^ ^ ^0.5 air run scoreboard players set @s snipercd 1
 execute as @a[scores={right_click=1.., snipercd=0},nbt={SelectedItem:{tag:{hstype:15}}}] at @s run function mike_pvp:sniper/item_work/item_eag_brs
-execute as @a[scores={right_click=1.., snipercd=0},nbt={SelectedItem:{tag:{hstype:16}}}] at @s run say RightClickDetected from 16
-execute as @a[scores={right_click=1.., snipercd=0},nbt={SelectedItem:{tag:{hstype:17}}}] at @s run say RightClickDetected from 17
-execute as @a[scores={right_click=1.., snipercd=0},nbt={SelectedItem:{tag:{hstype:18}}}] at @s run say RightClickDetected from 18
+execute as @a[scores={right_click=1.., snipercd=0},nbt={SelectedItem:{tag:{hstype:16}}}] at @s run function mike_pvp:sniper/item_work/item_lit_brs
+execute as @a[scores={right_click=1.., snipercd=0},nbt={SelectedItem:{tag:{hstype:17}}}] at @s run function mike_pvp:sniper/item_work/item_ibs_brs
+execute as @a[scores={right_click=1.., snipercd=0},nbt={SelectedItem:{tag:{hstype:18}}}] at @s run function mike_pvp:sniper/item_work/item_bst_brs
 
 # Cooldown Calc.
 execute as @a[scores={right_click=..0, snipercd=1..},nbt={SelectedItem:{tag:{hstype:15}}}] run scoreboard players remove @s snipercd 1
