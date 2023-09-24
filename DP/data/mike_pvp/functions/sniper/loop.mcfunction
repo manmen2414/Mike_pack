@@ -27,7 +27,7 @@ execute as @e[scores={snipercd=1..}, tag=firbst_15] at @s run particle minecraft
 execute as @e[tag=brusted] at @s run execute as @e[distance=..2.5] run execute unless score @e[distance=..0.01,sort=nearest,limit=1] master_pn = @s master_pn run scoreboard players set @e[distance=..0.01,sort=nearest,limit=1] snipercd 1
 
 # Reaching Destination
-execute as @e[scores={snipercd=1}, tag=firbst_15, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_eag_fin
+execute as @e[scores={snipercd=..1}, tag=firbst_15, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_eag_fin
 
 # Safety Killing
 execute as @e[type=minecraft:fireball] at @s run execute unless entity @a[distance=..110] run kill @s
