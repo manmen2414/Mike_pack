@@ -4,10 +4,13 @@ execute if entity @a[distance=..128] run summon minecraft:creeper ~ ~ ~ {Explosi
 execute if entity @a[distance=..128] run summon minecraft:creeper ~ ~0.1 ~ {ExplosionRadius:-3b,Fuse:0s,ignited:1b,Tags:["creep"]}
 execute if entity @a[distance=..128] run summon minecraft:creeper ~ ~ ~0.1 {ExplosionRadius:-3b,Fuse:0s,ignited:1b,Tags:["creep"]}
 execute if entity @a[distance=..128] run summon minecraft:creeper ~0.1 ~ ~ {ExplosionRadius:-3b,Fuse:0s,ignited:1b,Tags:["creep"]}
-execute as @e[distance=..3.5,tag=!creep] run damage @s 14 minecraft:player_explosion by @r[tag=pross_17]
-execute as @e[distance=3.5..5.5,tag=!creep] run damage @s 11 minecraft:player_explosion by @r[tag=pross_17]
-execute as @e[distance=5.5..7.7,tag=!creep] run damage @s 9 minecraft:player_explosion by @r[tag=pross_17]
-execute as @e[distance=7.7..10,tag=!creep] run damage @s 5 minecraft:player_explosion by @r[tag=pross_17]
+execute as @e[distance=..3.5,tag=!creep] run damage @s 17 minecraft:player_explosion by @r[tag=pross_17]
+execute as @e[distance=3.5..5.5,tag=!creep] run damage @s 14 minecraft:player_explosion by @r[tag=pross_17]
+execute as @e[distance=5.5..7.7,tag=!creep] run damage @s 11 minecraft:player_explosion by @r[tag=pross_17]
+execute as @e[distance=7.7..10,tag=!creep] run damage @s 3 minecraft:player_explosion by @r[tag=pross_17]
+effect give @a[distance=..5] minecraft:wither 1 1
+effect give @a[distance=..4] minecraft:wither 2 1
+effect give @a[distance=..3] minecraft:wither 5 1
 particle minecraft:explosion_emitter ~ ~ ~ 1 1 1 1 20 normal
 playsound entity.generic.explode voice @a ~0.1 ~ ~ 2.0 1.2
 playsound entity.generic.explode voice @a ~ ~0.1 ~ 2.0 1.2
