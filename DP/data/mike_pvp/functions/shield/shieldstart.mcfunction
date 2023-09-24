@@ -1,7 +1,7 @@
 summon iron_golem ^ ^ ^1.5 {Tags: [shield.defender, shield.processing], NoAI: 1b, DeathLootTable: ""}
 summon item_display ^ ^1 ^1.5 {Tags: [shield.display, shield.processing], item: {id: "minecraft:music_disc_11", Count: 1}}
 tag @s add shield.processing
-scoreboard players operation @e[tag=shield.processing] shield.numbering = @s shield.random
+scoreboard players operation @e[tag=shield.processing] shield.numbering = @s master_pn
 tag @e remove shield.processing
 
 execute at @s as @e[scores={shield.numbering=-2147483648..2147483647}] if score @s shield.numbering = @p shield.numbering run tag @s add shield.processing
