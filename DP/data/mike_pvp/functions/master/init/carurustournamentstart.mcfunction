@@ -1,0 +1,1 @@
+tellraw @s [{"text": "これを実行すると"},{"text": "プレイヤー全員がサバイバルになり、難易度がイージーになります。","bold": true,"color": "red"},{"text": "実行してよろしいですか？  "},{"text": "[それでも実行する]","color": "blue","clickEvent": {"action": "run_command","value": "/function mike_pvp:master/init/carurustournament/carutournament"}}]

@@ -1,0 +1,1 @@
+give @s minecraft:pufferfish{CustomModelData: 38, display: {Name: '[{"text":"カルルス","italic":false,"color":"aqua"}]', Lore: ['[{"text":"大不評。","italic":false}]', '[{"text":"ここでも食べるとまずいかも。","italic":false}]', '[{"text":"","italic":false}]', '[{"text":"Tip:ふぐ","italic":false}]']}}
