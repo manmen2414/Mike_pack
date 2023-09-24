@@ -1,7 +1,7 @@
 [
     "",
     {
-        "text": "[MASTER]\nControl Number Reset "
+        "text": "[MASTER] - Control Number Reset "
     },
     {
         "text": "[Confirm]",
@@ -12,7 +12,7 @@
         }
     },
     {
-        "text": "\n[SNIPER]\nReset "
+        "text": "\n[SNIPER] - Reset "
     },
     {
         "text": "[Confirm]",
@@ -23,7 +23,7 @@
         }
     },
     {
-        "text": "\n[SHIELD]\nEntity Kill "
+        "text": "\n[SHIELD] - Entity Kill "
     },
     {
         "text": "[Confirm]",
