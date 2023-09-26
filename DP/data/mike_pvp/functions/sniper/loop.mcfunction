@@ -29,7 +29,7 @@ execute as @e[tag=brusted] at @s run function mike_pvp:sniper/item_motion/proces
 execute as @e[scores={snipercd=..1}, tag=firbst_15, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_eag_fin
 execute as @e[scores={snipercd=..1}, tag=firbst_16, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_lit_fin
 execute as @e[scores={snipercd=..1}, tag=firbst_17, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_ibs_fin
-execute as @e[scores={snipercd=..1}, tag=firbst_18, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_btr_fin
+execute as @e[scores={snipercd=..1}, tag=firbst_18, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_btr_fin_n
 
 # Safety Killing
 execute as @e[type=minecraft:fireball] at @s run execute unless entity @a[distance=..110] run kill @s
