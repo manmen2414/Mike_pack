@@ -12,4 +12,5 @@ execute as @s[scores={shield.shieldingcount=1..2}] at @s run damage @e[tag=shiel
 execute at @s run playsound minecraft:item.armor.equip_netherite player @s ~ ~ ~
 execute at @s run playsound minecraft:item.armor.equip_netherite player @s ~ ~ ~
 execute at @s run playsound minecraft:item.armor.equip_netherite player @s ~ ~ ~
+effect give @e[tag=shield.processing,tag=shield.defender] invisibility infinite 1 true
 say 開始！
