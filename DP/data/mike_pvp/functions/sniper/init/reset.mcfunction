@@ -20,4 +20,4 @@ scoreboard objectives remove shield.random
 tellraw @a [{"text": "[sniper/master] 各種スコアボードを消去しました。"},{"text": "( 実行者 : ","color": "light_gray"},{"selector":"@s","color": "light_gray"},{"text": " )","color": "light_gray"}]
 
 function mike_pvp:master/pn
-function mike_pvp:master/init/worldinit
+function mike_pvp:sniper/init/worldinit
