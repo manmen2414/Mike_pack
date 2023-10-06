@@ -12,14 +12,14 @@
         }
     },
     {
-        "text": "\n[SNIPER] - Reset "
+        "text": "\n         - Scoreboard Reset"
     },
     {
         "text": "[Confirm]",
         "color": "red",
         "clickEvent": {
             "action": "suggest_command",
-            "value": "/function mike_pvp:sniper/init/reset"
+            "value": "/function mike_pvp:master/init/reset"
         }
     },
     {
@@ -185,7 +185,7 @@
         "color": "gray"
     },
     {
-       "text": " : "
+        "text": " : "
     },
     {
         "text": "BrusterAmmo [Disable]",
