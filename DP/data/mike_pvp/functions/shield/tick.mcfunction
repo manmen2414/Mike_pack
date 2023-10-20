@@ -6,3 +6,4 @@ scoreboard players add @e[type=minecraft:player] shield.shieldingcount 0
 scoreboard players add @e[type=minecraft:player] shield.shieldedcount 0
 scoreboard players add @e[type=minecraft:player] shield.defenderhp 0
 scoreboard players add @e[type=minecraft:player] shield.cooldown 0
+execute store result score @a shield.difficulty run difficulty
