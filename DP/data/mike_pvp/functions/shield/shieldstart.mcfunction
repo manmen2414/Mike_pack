@@ -6,8 +6,14 @@ tag @e remove shield.processing
 
 execute at @s as @e[scores={shield.numbering=-2147483648..2147483647}] if score @s shield.numbering = @p shield.numbering run tag @s add shield.processing
 
-execute as @s[scores={shield.shieldingcount=1}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 10
-execute as @s[scores={shield.shieldingcount=2}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 20
+execute as @s[scores={shield.shieldingcount=1,shield.difficulty=0}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 15
+execute as @s[scores={shield.shieldingcount=2,shield.difficulty=0}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 30
+execute as @s[scores={shield.shieldingcount=1,shield.difficulty=1}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 12
+execute as @s[scores={shield.shieldingcount=2,shield.difficulty=1}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 24
+execute as @s[scores={shield.shieldingcount=1,shield.difficulty=2}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 10
+execute as @s[scores={shield.shieldingcount=2,shield.difficulty=2}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 20
+execute as @s[scores={shield.shieldingcount=1,shield.difficulty=3}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 7
+execute as @s[scores={shield.shieldingcount=2,shield.difficulty=3}] at @s run attribute @e[tag=shield.processing,tag=shield.defender,limit=1] minecraft:generic.max_health base set 14
 execute as @s[scores={shield.shieldingcount=1..2}] at @s run damage @e[tag=shield.processing,tag=shield.defender,limit=1] 1
 execute at @s run playsound minecraft:item.armor.equip_netherite player @s ~ ~ ~
 execute at @s run playsound minecraft:item.armor.equip_netherite player @s ~ ~ ~

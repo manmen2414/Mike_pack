@@ -13,6 +13,7 @@ scoreboard objectives add shield.defenderhp dummy
 scoreboard objectives add shield.cooldown dummy
 scoreboard objectives add shield.calculation dummy
 scoreboard objectives add shield.numbering dummy
+scoreboard objectives add shield.difficulty dummy
 
 scoreboard players set @a snipercd 0
 tellraw @a [{"text": "[sniper] 各種スコアボードを生成しました。"},{"text": "( 実行者 : ","color": "light_gray"},{"selector":"@s","color": "light_gray"},{"text": " )","color": "light_gray"}]
