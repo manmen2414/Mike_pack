@@ -1,0 +1,1 @@
+tellraw @p "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnope for give"
