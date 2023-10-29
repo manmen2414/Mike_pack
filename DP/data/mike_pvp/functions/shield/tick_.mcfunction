@@ -6,7 +6,10 @@ scoreboard players set @s[nbt=!{SelectedItem: {tag: {CustomModelData: 21}}},nbt=
 # ↑ アイテムを持ってるか？　↓ 前の状態と違うか確認するstatuscheckを実行
 function mike_pvp:shield/statuscheck
 # ↑ 前の状態と違うか確認するstatuscheckを実行　↓ durabilityを実行
-execute as @s[scores={shield.shieldingcount=1..2}] run function mike_pvp:shield/durability10_20
+execute as @s[scores={shield.difficulty=0,shield.difficulty=0}] run function mike_pvp:shield/durability/durability15
+execute as @s[scores={shield.difficulty=1,shield.difficulty=1}] run function mike_pvp:shield/durability/durability12
+execute as @s[scores={shield.difficulty=2,shield.difficulty=2}] run function mike_pvp:shield/durability/durability10
+execute as @s[scores={shield.difficulty=3,shield.difficulty=3}] run function mike_pvp:shield/durability/durability7
 # ↑ durabilityを実行 ↓ ゴーレムを管理
 execute as @e[tag=shield.defender,tag=shield.processing] run tp @s ^ ^ ^1.5 ~ ~
 execute as @e[tag=shield.defender,tag=shield.processing] store result score @p[scores={shield.shieldingcount=1..2},distance=..0.001] shield.defenderhp run data get entity @s Health

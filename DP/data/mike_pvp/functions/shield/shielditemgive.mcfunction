@@ -1,1 +1,1 @@
-give @s golden_sword{CustomModelData: 21, display: {Name: '"CMD21の盾"'}, Enchantments: [{id: "unbreaking", lvl: 10}]} 2
+give @s golden_sword{CustomModelData: 21, display: {Name: '"Shield"'}, Enchantments: [{id: "unbreaking", lvl: 10}]} 2

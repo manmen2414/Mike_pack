@@ -16,6 +16,7 @@ scoreboard objectives remove shield.cooldown
 scoreboard objectives remove shield.calculation
 scoreboard objectives remove shield.numbering
 scoreboard objectives remove shield.random
+scoreboard objectives remove shield.difficulty
 scoreboard objectives remove brusterammo
 
 tellraw @a [{"text": "[sniper/master] 各種スコアボードを消去しました。"},{"text": "( 実行者 : ","color": "light_gray"},{"selector":"@s","color": "light_gray"},{"text": " )","color": "light_gray"}]
