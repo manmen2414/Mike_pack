@@ -31,6 +31,9 @@ execute as @e[scores={snipercd=..1}, tag=firbst_16, type=minecraft:fireball] at 
 execute as @e[scores={snipercd=..1}, tag=firbst_17, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_ibs_fin
 execute as @e[scores={snipercd=..1}, tag=firbst_18, type=minecraft:fireball] at @s run function mike_pvp:sniper/item_work/item_btr_fin_n
 
+# [settings] Quick Personal Menu
+execute as @a[scores={snipermn=1..}] run function mike_pvp:settings/sniper/quick
+
 # Safety Killing
 execute as @e[type=minecraft:fireball] at @s run execute unless entity @a[distance=..110] run kill @s
 
